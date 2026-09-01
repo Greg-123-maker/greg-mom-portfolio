@@ -1,231 +1,570 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Greg Mom — personal portfolio, projects, education, interests, and gallery.">
-  <meta name="author" content="Greg Mom">
-  <meta name="theme-color" content="#0b1220">
-  <title>Greg Mom | Portfolio</title>
+  <meta name="description" content="Greg Mom - Electrical Engineering student at South Dakota State University.">
+  <title>Greg Mom | Electrical Engineering Student</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="progress" id="progress"></div>
 
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#home">Greg<span>.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-        <a class="linkedin-nav" href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☀️</button>
-      </div>
-    </nav>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">GM<span>.</span></a>
+
+```
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+    ☰
+  </button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    ◐
+  </button>
+</div>
+```
+
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-glow"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">WELCOME — I'M GREG MOM</p>
-          <h1>Learning. Building.<br><span>Becoming.</span></h1>
-          <p class="typing-line">I'm interested in <strong id="typing"></strong><span class="cursor">|</span></p>
-          <p class="hero-text">An Electrical Engineering student at South Dakota State University who enjoys technology, problem solving, web development, and turning ideas into real projects.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">Explore My Work</a>
-            <a class="btn secondary" href="#contact">Let's Connect</a>
-          </div>
-          <div class="hero-socials">
-            <a href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:gregmom1357@gmail.com">Email</a>
-          </div>
-        </div>
-        <div class="hero-card reveal">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="avatar">GM</div>
-          <div class="floating-card card-top">⚡ Electrical Engineering</div>
-          <div class="floating-card card-bottom">💻 Building & Learning</div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>More than a student.</h2>
-          <p>I’m building skills and experiences one project at a time.</p>
-        </div>
-        <div class="about-grid">
-          <div class="about-panel reveal">
-            <div class="big-initials">GM</div>
-            <div>
-              <p class="mini-label">CURRENTLY</p>
-              <h3>Student at SDSU</h3>
-              <p>Focused on academics, personal growth, technology, and future opportunities.</p>
-            </div>
-          </div>
-          <div class="about-copy reveal">
-            <p>I created this site as my personal corner of the internet — a place to introduce myself, showcase projects, share interests, and keep track of my growth.</p>
-            <p>I enjoy learning new things, experimenting with technology, and challenging myself to turn ideas into something useful.</p>
-            <div class="facts">
-              <div><span>Name</span><strong>Greg Mom</strong></div>
-              <div><span>University</span><strong>South Dakota State University</strong></div>
-              <div><span>Major</span><strong>Electrical Engineering</strong></div>
-              <div><span>Email</span><strong>gregmom1357@gmail.com</strong></div>
-              <div><span>Graduation</span><strong>Expected 2029</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+```
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    <p class="eyebrow">ELECTRICAL ENGINEERING STUDENT</p>
 
-    <section class="section muted-section" id="education">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">EDUCATION</p>
-          <h2>My academic journey.</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <span class="date">2026 — 2029</span>
-              <h3>South Dakota State University</h3>
-              <p class="accent-text">Electrical Engineering Student</p>
-              <p>Studying Electrical Engineering while developing technical, analytical, professional, and problem-solving skills for a future engineering career.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <h1>
+      Hi, I'm <span>Greg Mom.</span>
+    </h1>
 
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">SKILLS</p>
-          <h2>What I'm developing.</h2>
-          <p>These are areas I’m actively learning and improving.</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card reveal"><div class="skill-icon">🌐</div><h3>HTML & CSS</h3><p>Building responsive, clean, accessible web pages.</p><div class="meter"><span style="width:85%"></span></div></div>
-          <div class="skill-card reveal"><div class="skill-icon">⚡</div><h3>JavaScript</h3><p>Adding interaction, logic, animations, and useful features.</p><div class="meter"><span style="width:65%"></span></div></div>
-          <div class="skill-card reveal"><div class="skill-icon">🧠</div><h3>Problem Solving</h3><p>Breaking difficult problems into manageable steps.</p><div class="meter"><span style="width:85%"></span></div></div>
-          <div class="skill-card reveal"><div class="skill-icon">🚀</div><h3>Learning Mindset</h3><p>Continuously learning and turning new knowledge into practice.</p><div class="meter"><span style="width:92%"></span></div></div>
-        </div>
-      </div>
-    </section>
+    <h2>
+      Building my future through
+      <span id="typingText">Engineering</span>
+    </h2>
 
-    <section class="section muted-section" id="projects">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">PROJECTS</p>
-          <h2>Things I'm building.</h2>
-          <p>Projects can be added here as your portfolio grows.</p>
-        </div>
-        <div class="filters reveal">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="web">Web</button>
-          <button class="filter" data-filter="future">Future</button>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card reveal" data-category="web">
-            <div class="project-visual">🌐</div><div class="project-body"><span class="tag">WEB</span><h3>Personal Portfolio</h3><p>A responsive portfolio website with animations, dark mode, projects, gallery, and contact tools.</p></div>
-          </article>
-          <article class="project-card reveal" data-category="web">
-            <div class="project-visual">🧩</div><div class="project-body"><span class="tag">WEB</span><h3>Web Experiments</h3><p>A growing collection of small experiments created while learning HTML, CSS, and JavaScript.</p></div>
-          </article>
-          <article class="project-card reveal" data-category="future">
-            <div class="project-visual">🚀</div><div class="project-body"><span class="tag">COMING SOON</span><h3>Future Project</h3><p>This space is ready for your next major project, app, website, or engineering idea.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <p class="hero-description">
+      I'm an Electrical Engineering student at South Dakota State University
+      with an interest in technology, problem solving, innovation, and
+      building practical solutions that can make a difference.
+    </p>
 
-    <section class="section" id="gallery">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">GALLERY</p>
-          <h2>Moments & memories.</h2>
-          <p>Replace the sample images with your own university, aviation, project, travel, or personal photos.</p>
-        </div>
-        <div class="gallery-filters reveal">
-          <button class="gallery-filter active" data-gallery-filter="all">All</button>
-          <button class="gallery-filter" data-gallery-filter="university">University</button>
-          <button class="gallery-filter" data-gallery-filter="engineering">Engineering</button>
-          <button class="gallery-filter" data-gallery-filter="projects">Projects</button>
-        </div>
-        <div class="gallery-grid" id="galleryGrid">
-          <button class="gallery-item reveal" data-category="university" data-full="images/university.svg" data-title="University" data-caption="A place for learning, growth, and new experiences."><img src="images/university.svg" alt="University placeholder"></button>
-          <button class="gallery-item reveal" data-category="aviation" data-full="images/aviation.svg" data-title="Aviation" data-caption="Aviation is one of the interests featured on this portfolio."><img src="images/aviation.svg" alt="Aviation placeholder"></button>
-          <button class="gallery-item reveal" data-category="projects" data-full="images/projects.svg" data-title="Projects" data-caption="A placeholder for a future project photo or screenshot."><img src="images/projects.svg" alt="Projects placeholder"></button>
-          <button class="gallery-item reveal" data-category="university" data-full="images/campus-life.svg" data-title="Campus Life" data-caption="Add a favorite campus memory here."><img src="images/campus-life.svg" alt="Campus life placeholder"></button>
-          <button class="gallery-item reveal" data-category="aviation" data-full="images/flight.svg" data-title="Flight" data-caption="Replace this with one of your favorite aviation photos."><img src="images/flight.svg" alt="Flight placeholder"></button>
-          <button class="gallery-item reveal" data-category="projects" data-full="images/idea.svg" data-title="Ideas" data-caption="A space for your next big idea."><img src="images/idea.svg" alt="Ideas placeholder"></button>
-        </div>
-        <div class="gallery-tip reveal"><strong>Adding your own photos:</strong> put your images inside the <code>images</code> folder and change the image filenames in <code>index.html</code>.</div>
-      </div>
-    </section>
-
-    <section class="section muted-section" id="contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">CONTACT</p>
-          <h2>Let's connect.</h2>
-          <p>Whether it’s an opportunity, a project, or simply saying hello.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card reveal">
-            <h3>Find me online</h3>
-            <p>I’d be happy to connect professionally or hear from you.</p>
-            <a class="contact-link" href="mailto:gregmom1357@gmail.com">📧 <span><small>Email</small>gregmom1357@gmail.com</span></a>
-            <a class="contact-link" href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">💼 <span><small>LinkedIn</small>Greg Mom</span></a>
-          </div>
-          <form class="contact-form reveal" id="contactForm">
-            <label>Name<input id="visitorName" type="text" required placeholder="Your name"></label>
-            <label>Email<input id="visitorEmail" type="email" required placeholder="you@example.com"></label>
-            <label>Message<textarea id="visitorMessage" required placeholder="Write your message..."></textarea></label>
-            <button class="btn primary" type="submit">Prepare Email →</button>
-            <p class="form-note">Submitting opens your email app with the message addressed to Greg.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div><a class="logo" href="#home">Greg<span>.</span></a><p>Keep learning. Keep building. Keep growing.</p></div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:gregmom1357@gmail.com">Email</a>
-        <a href="#home">Back to top ↑</a>
-      </div>
-      <p class="copyright">© <span id="year"></span> Greg Mom. All rights reserved.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View My Work</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
     </div>
-  </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">×</button>
-    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
-    <div class="lightbox-content">
-      <img id="lightboxImage" src="" alt="">
-      <h3 id="lightboxTitle"></h3>
-      <p id="lightboxCaption"></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+      <a href="mailto:gregmom1357@gmail.com">
+        Email
+      </a>
     </div>
-    <button class="lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
   </div>
 
-  <div class="toast" id="toast"></div>
+  <div class="hero-visual reveal">
+    <div class="hero-card">
+      <div class="hero-icon">⚡</div>
+      <h3>Electrical Engineering</h3>
+      <p>Learning. Building. Improving.</p>
+    </div>
+
+    <div class="floating-card card-one">
+      <span>01</span>
+      <strong>Engineering</strong>
+    </div>
+
+    <div class="floating-card card-two">
+      <span>02</span>
+      <strong>Innovation</strong>
+    </div>
+
+    <div class="floating-card card-three">
+      <span>03</span>
+      <strong>Technology</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-heading reveal">
+    <p class="eyebrow">ABOUT ME</p>
+    <h2>Getting to know <span>Greg</span></h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I am an Electrical Engineering student at South Dakota State
+        University. I enjoy learning how technology works and finding
+        ways to turn ideas into useful solutions.
+      </p>
+
+      <p>
+        My interests include engineering, electronics, programming,
+        technology, problem solving, and continuous personal growth.
+        I believe that every challenge is an opportunity to learn
+        something new.
+      </p>
+
+      <p>
+        My goal is to continue developing my technical knowledge,
+        practical experience, and communication skills while preparing
+        for a successful career in engineering.
+      </p>
+    </div>
+
+    <div class="about-info reveal">
+      <div>
+        <span>Name</span>
+        <strong>Greg Mom</strong>
+      </div>
+
+      <div>
+        <span>University</span>
+        <strong>South Dakota State University</strong>
+      </div>
+
+      <div>
+        <span>Major</span>
+        <strong>Electrical Engineering</strong>
+      </div>
+
+      <div>
+        <span>Focus</span>
+        <strong>Engineering & Technology</strong>
+      </div>
+
+      <div>
+        <span>Email</span>
+        <strong>gregmom1357@gmail.com</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section alt-section" id="education">
+  <div class="section-heading reveal">
+    <p class="eyebrow">EDUCATION</p>
+    <h2>My academic <span>journey</span></h2>
+  </div>
+
+  <div class="education-card reveal">
+    <div class="education-icon">🎓</div>
+
+    <div>
+      <p class="accent-text">Electrical Engineering Student</p>
+      <h3>South Dakota State University</h3>
+      <p>
+        Pursuing a degree in Electrical Engineering while developing
+        strong foundations in mathematics, physics, programming,
+        electronics, and engineering problem solving.
+      </p>
+
+      <div class="education-tags">
+        <span>Electrical Engineering</span>
+        <span>Technology</span>
+        <span>Problem Solving</span>
+        <span>Innovation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-heading reveal">
+    <p class="eyebrow">MY SKILLS</p>
+    <h2>What I'm <span>working on</span></h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚡</div>
+      <h3>Electrical Engineering</h3>
+      <p>
+        Developing knowledge in electrical systems, circuits,
+        electronics, and engineering fundamentals.
+      </p>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">💻</div>
+      <h3>Programming</h3>
+      <p>
+        Building programming knowledge and using technology to
+        solve problems and create useful applications.
+      </p>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🧠</div>
+      <h3>Problem Solving</h3>
+      <p>
+        Breaking difficult problems into smaller steps and
+        developing practical solutions.
+      </p>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🌐</div>
+      <h3>Web Development</h3>
+      <p>
+        Creating responsive websites using HTML, CSS,
+        JavaScript, and modern web design principles.
+      </p>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">📊</div>
+      <h3>Mathematics</h3>
+      <p>
+        Applying mathematical concepts to understand engineering
+        problems and analyze technical information.
+      </p>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🚀</div>
+      <h3>Continuous Learning</h3>
+      <p>
+        Always looking for opportunities to learn new technologies,
+        develop new skills, and improve.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt-section" id="projects">
+  <div class="section-heading reveal">
+    <p class="eyebrow">PROJECTS</p>
+    <h2>Things I'm <span>building</span></h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <article class="project-card reveal">
+      <div class="project-number">01</div>
+      <div class="project-icon">🌐</div>
+      <h3>Personal Portfolio</h3>
+      <p>
+        A responsive personal website designed to showcase my
+        education, skills, interests, projects, and professional journey.
+      </p>
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-number">02</div>
+      <div class="project-icon">⚡</div>
+      <h3>Engineering Development</h3>
+      <p>
+        Exploring electrical engineering concepts and developing
+        technical skills through coursework, experimentation,
+        and hands-on learning.
+      </p>
+      <div class="project-tags">
+        <span>Engineering</span>
+        <span>Electronics</span>
+        <span>Problem Solving</span>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-number">03</div>
+      <div class="project-icon">💡</div>
+      <h3>Future Projects</h3>
+      <p>
+        Continuing to build projects that combine engineering,
+        programming, electronics, and technology.
+      </p>
+      <div class="project-tags">
+        <span>Innovation</span>
+        <span>Technology</span>
+        <span>Engineering</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="section-heading reveal">
+    <p class="eyebrow">GALLERY</p>
+    <h2>A look into my <span>journey</span></h2>
+    <p>
+      A collection of moments from my education, engineering journey,
+      projects, campus life, and personal experiences.
+    </p>
+  </div>
+
+  <div class="gallery-filters reveal">
+    <button class="gallery-filter active" data-gallery-filter="all">
+      All
+    </button>
+
+    <button class="gallery-filter" data-gallery-filter="engineering">
+      Engineering
+    </button>
+
+    <button class="gallery-filter" data-gallery-filter="campus">
+      Campus
+    </button>
+
+    <button class="gallery-filter" data-gallery-filter="projects">
+      Projects
+    </button>
+  </div>
+
+  <div class="gallery-grid">
+
+    <button
+      class="gallery-item reveal"
+      data-category="engineering"
+      data-full="university.svg"
+      data-title="Electrical Engineering"
+      data-caption="My journey as an Electrical Engineering student."
+    >
+      <img src="university.svg" alt="Electrical Engineering">
+      <div class="gallery-overlay">
+        <strong>Electrical Engineering</strong>
+        <span>Engineering Journey</span>
+      </div>
+    </button>
+
+    <button
+      class="gallery-item reveal"
+      data-category="engineering"
+      data-full="projects.svg"
+      data-title="Engineering & Technology"
+      data-caption="Exploring technology, engineering, and new ideas."
+    >
+      <img src="projects.svg" alt="Engineering and technology">
+      <div class="gallery-overlay">
+        <strong>Engineering & Technology</strong>
+        <span>Innovation</span>
+      </div>
+    </button>
+
+    <button
+      class="gallery-item reveal"
+      data-category="projects"
+      data-full="idea.svg"
+      data-title="Ideas & Projects"
+      data-caption="Turning ideas into practical projects and solutions."
+    >
+      <img src="idea.svg" alt="Ideas and projects">
+      <div class="gallery-overlay">
+        <strong>Ideas & Projects</strong>
+        <span>Building the Future</span>
+      </div>
+    </button>
+
+    <button
+      class="gallery-item reveal"
+      data-category="campus"
+      data-full="campus-life.svg"
+      data-title="Campus Life"
+      data-caption="Life and learning at South Dakota State University."
+    >
+      <img src="campus-life.svg" alt="Campus life">
+      <div class="gallery-overlay">
+        <strong>Campus Life</strong>
+        <span>SDSU</span>
+      </div>
+    </button>
+
+    <button
+      class="gallery-item reveal"
+      data-category="engineering"
+      data-full="flight.svg"
+      data-title="Technical Learning"
+      data-caption="Developing technical knowledge and practical skills."
+    >
+      <img src="flight.svg" alt="Technical learning">
+      <div class="gallery-overlay">
+        <strong>Technical Learning</strong>
+        <span>Growth</span>
+      </div>
+    </button>
+
+    <button
+      class="gallery-item reveal"
+      data-category="projects"
+      data-full="aviation.svg"
+      data-title="Technology & Innovation"
+      data-caption="Exploring technology and the possibilities of engineering."
+    >
+      <img src="aviation.svg" alt="Technology and innovation">
+      <div class="gallery-overlay">
+        <strong>Technology & Innovation</strong>
+        <span>Future Goals</span>
+      </div>
+    </button>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-heading reveal">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Let's <span>connect</span></h2>
+    <p>
+      Whether you'd like to connect professionally, discuss engineering,
+      or simply say hello, I'd be happy to hear from you.
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-info reveal">
+      <a href="mailto:gregmom1357@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <small>Email</small>
+          <strong>gregmom1357@gmail.com</strong>
+        </div>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/greg-mom-1243512b6/"
+        target="_blank"
+        rel="noopener"
+        class="contact-card"
+      >
+        <span class="contact-icon">in</span>
+        <div>
+          <small>LinkedIn</small>
+          <strong>Greg Mom</strong>
+        </div>
+      </a>
+
+      <div class="contact-card">
+        <span class="contact-icon">🎓</span>
+        <div>
+          <small>University</small>
+          <strong>South Dakota State University</strong>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <button type="submit" class="btn primary">
+        Send Message
+      </button>
+
+      <p class="form-status" id="formStatus"></p>
+
+    </form>
+  </div>
+</section>
+```
+
+  </main>
+
+  <!-- LIGHTBOX -->
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      ×
+    </button>
+
+```
+<button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">
+  ‹
+</button>
+
+<div class="lightbox-content">
+  <img id="lightboxImage" src="" alt="">
+  <h3 id="lightboxTitle"></h3>
+  <p id="lightboxCaption"></p>
+</div>
+
+<button class="lightbox-next" id="lightboxNext" aria-label="Next">
+  ›
+</button>
+```
+
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <footer class="footer">
+    <div>
+      <strong>Greg Mom</strong>
+      <p>Electrical Engineering Student</p>
+    </div>
+
+```
+<p>
+  © <span id="year"></span> Greg Mom. All rights reserved.
+</p>
+
+<div class="footer-links">
+  <a href="https://www.linkedin.com/in/greg-mom-1243512b6/" target="_blank" rel="noopener">
+    LinkedIn
+  </a>
+  <a href="mailto:gregmom1357@gmail.com">
+    Email
+  </a>
+</div>
+```
+
+  </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
